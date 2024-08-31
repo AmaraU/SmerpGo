@@ -1,0 +1,35 @@
+.logo-mt {
+    margin-top: -5px;
+}
+
+.default-font {
+    font-family: sans-serif;
+}
+
+.custom-tooltip {
+    background-color: hsla(0, 0%, 100%, .8);
+    border: 1px solid #f5f5f5;
+    line-height: 24px;
+    margin: 0;
+    padding: 10px;
+    width: 150px
+}
+
+.custom-tooltip .label {
+    color: #666;
+    font-weight: 600;
+    font-size: 14px;
+    margin: 0
+}
+
+.custom-tooltip .desc {
+    color: #999;
+    font-size: 12px;
+    margin: 0
+}
+
+.custom-tooltip .intro {
+    border-top: 1px solid #f5f5f5;
+    font-size: 16px;
+    margin: 0
+}
