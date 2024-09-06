@@ -6,6 +6,11 @@ import imag from '../images/delete.png';
 export const DeleteAccount = () => {
 
     const { isOpen: isOpenSent, onOpen: onOpenSent, onClose: onCloseSent } = useDisclosure();
+    
+    const handleSentPopup = () => {
+        onOpenSent();
+        setTimeout(() => onCloseSent(), 5000);
+    }
 
     return (
         <div>
@@ -23,7 +28,7 @@ export const DeleteAccount = () => {
                         <FormLabel fontSize={'16px'} fontWeight={500} mb={'5px'}>User ID:</FormLabel>
                         <Input type='text' placeholder='User ID' _placeholder={{ fontSize: "12px", color: '#CCCCCC' }} padding={'6px 12px'} fontSize={'12px'} color={'#CCCCCC'}  />
                     </FormControl>
-                    <button onClick={onOpenSent} style={{backgroundColor: 'rgb(124, 92, 252)', color: '#FFF', padding: '6px 10px', borderRadius: '6px'}} _hover={{backgroundColor: '#695ACE'}}>Next</button>
+                    <button type='button' onClick={handleSentPopup} style={{backgroundColor: 'rgb(124, 92, 252)', color: '#FFF', padding: '6px 10px', borderRadius: '6px'}} _hover={{backgroundColor: '#695ACE'}}>Next</button>
                 </form>
             </Stack>
         </Flex>
